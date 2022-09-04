@@ -1,0 +1,48 @@
+nav.navbar {
+    border-bottom: solid 1px;
+}
+
+button.btn {
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 4px 12px !important;
+}
+
+.header__wrapper {
+    background-color: var(--active-color);
+    height: 440px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+}
+
+h1.header__title {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 20px !important;
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h4.header__description {
+    width: 40%;
+    margin-bottom: 50px !important;
+    line-height: 30px;
+    font-weight: 400 !important;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button.btn.header__btn {
+    padding: 4px 40px !important;
+    font-size: 20px;
+    border-radius: 60px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    h1.header__title{
+       font-size: 3rem;
+    }
+
+
+ }

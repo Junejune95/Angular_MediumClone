@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: sans-serif;
+}
+
+
+
+:root{
+    --primary-color:rgba(8, 8, 8, 1);
+    --border-radius:20px;
+    --secondary-color:rgba(255,255,255,255);
+    --active-color:#FFC017;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    .container-fluid{
+        padding: 0 20px !important;
+    }
+
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .container-fluid{
+        padding: 0 20px !important;
+    }
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .container-fluid{
+        padding: 0 60px !important;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .container-fluid{
+        padding: 0 60px !important;
+    }
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .container-fluid{
+        padding: 0 120px !important;
+    }
+}
