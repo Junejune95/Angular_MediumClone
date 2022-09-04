@@ -9,6 +9,7 @@ button.btn {
     padding: 4px 12px !important;
 }
 
+
 .header__wrapper {
     background-color: var(--active-color);
     height: 440px;
@@ -36,13 +37,14 @@ button.btn.header__btn {
     padding: 4px 40px !important;
     font-size: 20px;
     border-radius: 60px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { 
-    h1.header__title{
-       font-size: 3rem;
+@media (max-width: 576px) {
+    h1.header__title {
+        font-size: 3rem;
     }
-
-
- }
+}

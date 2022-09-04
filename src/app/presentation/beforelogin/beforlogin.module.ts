@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
+
 import { InitpageComponent } from './initpage/initpage.component';
-import { BeforeloginRoutingModule } from 'src/app/modules/beforelogin/beforelogin-routing.module';
+import { BeforeloginRoutingModule } from 'src/app/presentation/beforelogin/beforelogin-routing.module';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     InitpageComponent
   ],
   imports: [
     CommonModule,
-    BeforeloginRoutingModule
+    BeforeloginRoutingModule,
+    RouterModule
   ]
 })
 export class BeforeloginModule { }

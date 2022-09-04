@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path:'',
-    loadChildren: () => import('./modules/beforelogin/beforlogin.module').then((m) => m.BeforeloginModule)
+    loadChildren: () => import('./presentation/beforelogin/beforlogin.module').then((m) => m.BeforeloginModule)
 
   }
 ];
