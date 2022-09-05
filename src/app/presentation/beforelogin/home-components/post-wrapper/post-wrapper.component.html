@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <ng-container *ngFor="let post of posts;let i=index">
+                <div class="post__content">
+                    <div class="post__left">
+                        <div class="post__userinfo">
+                            <img src="https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png"
+                                width="40px" height="40px">
+                            <p class="user__name">
+                                User Name{{i}}
+                            </p>
+                        </div>
+                        <h4 class="post__title">
+                            Lorem ipsum dolor sit amet?
+                        </h4>
+                        <p class="post__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id enim sit amet mi iaculis
+                            finibus quis a elit. Integer id purus maximus, pulvina
+                        </p>
+                        <div class="post__footer">
+                            <div>
+                                <span class="post__date">
+                                    {{currentDate | date : 'MMM d'}}
+                                </span>
+                                <div class="dot"></div>
+                                <span class="post__duration">
+                                    10 min read
+                                </span>
+                                <div class="dot"></div>
+                                <div class="post__type">
+                                    Software Development
+                                </div>
+                            </div>
+                           
+                            <button class="btn">
+                                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post__right">
+                        <img
+                            src="https://images.vexels.com/media/users/3/131734/isolated/preview/05d86a9b63d1930d6298b27081ddc345-photo-preview-frame-icon.png">
+                    </div>
+                </div>
+            </ng-container>
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+</div>
