@@ -1,3 +1,7 @@
+.main__wrapper{
+    overflow: overlay;
+    height: 100vh;
+}
 nav.navbar {
     border-bottom: solid 1px;
 }
@@ -12,7 +16,7 @@ button.btn {
 
 .header__wrapper {
     background-color: var(--active-color);
-    height: 440px;
+    height: 500px;
     display: flex;
     align-items: center;
     border-bottom: solid 1px;

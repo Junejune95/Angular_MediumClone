@@ -1,0 +1,46 @@
+<div class="main__wrapper">
+    <div class="container-fluid">
+
+        <div class="title__wrapper">
+            <div class="icon">
+                <i class="fa fa-arrow-trend-up"></i>
+            </div>
+            <h6>TRENDING ON MEDIUM</h6>
+        </div>
+        <div class="trend__wrapper">
+            <div class="row">
+                <div class="col-md-4 col-sm-6" *ngFor="let trend of [1,2,3,4,5,6]">
+                    <div class="trend__content">
+                        <p class="trend__no">
+                            0{{trend}}
+                        </p>
+                        <div class="trend__post--data">
+                            <div class="post__userinfo">
+                                <img src="https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png"
+                                    width="25px" height="25px">
+                                <p class="user__name">
+                                    User Name{{trend}}
+                                </p>
+                            </div>
+                            <p class="post__title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id enim sit amet mi iaculis
+                                finibus quis a elit. Integer id purus maximus, pulvina
+                            </p>
+                            <div class="post__footer">
+                                <span class="post__date">
+                                    {{currentDate | date : 'MMM d'}}
+                                </span>
+                                <div class="dot"></div>
+                                <span class="post__duration">
+                                    10 min read
+                                </span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    </div>

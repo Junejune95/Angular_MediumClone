@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { InitpageComponent } from './initpage/initpage.component';
 import { BeforeloginRoutingModule } from 'src/app/presentation/beforelogin/beforelogin-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -14,7 +15,8 @@ import { BeforeloginRoutingModule } from 'src/app/presentation/beforelogin/befor
   imports: [
     CommonModule,
     BeforeloginRoutingModule,
-    RouterModule
+    RouterModule,
+ 
   ]
 })
 export class BeforeloginModule { }
