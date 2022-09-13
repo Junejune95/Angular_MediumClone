@@ -8,11 +8,11 @@
     
             <div class="collapse navbar-collapse justify-content-end">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Our Story</a>
-                    <a class="nav-item nav-link" href="#">Membership</a>
-                    <a class="nav-item nav-link" href="#">Write</a>
-                    <a class="nav-item nav-link disabled" href="#">Sign In</a>
-                    <button class="btn ">Get Started</button>
+                    <a class="nav-item nav-link" [routerLink]="['/about']">Our Story</a>
+                    <a class="nav-item nav-link" [routerLink]="['/membership']">Membership</a>
+                    <a class="nav-item nav-link" [routerLink]="['/creators']">Write</a>
+                    <a class="nav-item nav-link" href="#">Sign In</a>
+                    <button class="btn btn-signin">Get Started</button>
                 </div>
             </div>
         </div>

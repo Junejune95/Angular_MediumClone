@@ -1,59 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@fortawesome/fontawesome-free/css/all.css';
+// @import "~@fortawesome/fontawesome-free/css/all.css";
 
-html{
+html {
     padding: 0 !important;
     margin: 0 !important;
     font-family: sans-serif;
     overflow: hidden;
 }
 
+:root {
+    --primary-color: rgba(8, 8, 8, 1);
+    --border-radius: 20px;
+    --secondary-color: rgba(255, 255, 255, 255);
+    --active-color: #ffc017;
+    --fade-color: rgba(117, 117, 117, 1);
+    --default-border: solid 1px;
+    --extra-fade-color: rgba(242, 242, 242, 1);
+    --light-color:#FFFFFF;
+}
+
+.main__wrapper{
+    overflow: overlay;
+    height: 100vh;
+    
+}
 
 
-:root{
-    --primary-color:rgba(8, 8, 8, 1);
-    --border-radius:20px;
-    --secondary-color:rgba(255,255,255,255);
-    --active-color:#FFC017;
-    --fade-color:rgba(117, 117, 117, 1);
-    --default-border:solid 1px;
-    --extra-fade-color:rgba(242, 242, 242, 1)
+
+button.btn-signin {
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 4px 12px !important;
+}
+
+nav.navbar {
+    border-bottom: solid 1px;
+}
+
+a.nav-item.nav-link{
+    color: var(--primary-color) !important;
+    font-size: 14px;
+}
+
+a.nav-item.nav-link.active {
+    text-decoration: underline;
+    color: var(--primary-color);
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { 
-    .container-fluid{
+@media (max-width: 576px) {
+    .container-fluid {
         padding: 0 20px !important;
     }
-
- }
+}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    .container-fluid{
+@media (min-width: 576px) {
+    .container-fluid {
         padding: 0 40px !important;
     }
-
- }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    .container-fluid{
+@media (min-width: 768px) {
+    .container-fluid {
         padding: 0 60px !important;
     }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .container-fluid{
+@media (min-width: 992px) {
+    .container-fluid {
         padding: 0 60px !important;
     }
-
- }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    .container-fluid{
+@media (min-width: 1200px) {
+    .container-fluid {
         padding: 0 120px !important;
     }
 }

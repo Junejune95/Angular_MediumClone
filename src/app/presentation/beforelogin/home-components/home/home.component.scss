@@ -1,18 +1,10 @@
-.main__wrapper{
-    overflow: overlay;
-    height: 100vh;
-}
-nav.navbar {
-    border-bottom: solid 1px;
-}
 
-button.btn {
-    border-radius: var(--border-radius);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 4px 12px !important;
-}
 
+
+.nav-item{
+    color: var(--primary-color);
+    font-size: 14px;
+}
 
 .header__wrapper {
     background-color: var(--active-color);

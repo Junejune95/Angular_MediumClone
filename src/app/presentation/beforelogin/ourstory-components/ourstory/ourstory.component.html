@@ -1,1 +1,172 @@
-<p>ourstory works!</p>
+<div class="main__wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png" width="200px"
+                    class="d-inline-block align-top" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" [routerLink]="['/about']">Our Story</a>
+                    <a class="nav-item nav-link" [routerLink]="['/membership']">Membership</a>
+                    <a class="nav-item nav-link" [routerLink]="['/creators']">Write</a>
+                    <a class="nav-item nav-link" href="#">Sign In</a>
+                    <button class="btn btn-signin ">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="title__wrapper">
+            <p class="header-1">Every idea needs a</p>
+            <div class="text__logo">
+                <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/wordmark.svg">
+                <!-- <h1>.</h1> -->
+            </div>
+        </div>
+
+        <div class="selection1__wrapper">
+            <div class="selection1__description">
+                <h4>
+                    The best ideas can change who we are. Medium is where those ideas take shape, take off, and spark
+                    powerful conversations. We’re an open platform where over 100 million readers come to find
+                    insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of
+                    any topic and bring new ideas to the surface. Our purpose is to spread these ideas and deepen
+                    understanding of the world.
+                    <br>
+                    <br>
+                    We’re creating a new model for digital publishing. One that supports nuance, complexity, and vital
+                    storytelling without giving in to the incentives of advertising. It’s an environment that’s open to
+                    everyone but promotes substance and authenticity. And it’s where deeper connections forged between
+                    readers and writers can lead to discovery and growth. Together with millions of collaborators, we’re
+                    building a trusted and vibrant ecosystem fueled by important ideas and the people who think about
+                    them.
+                </h4>
+
+            </div>
+            <div class="selection1__iframe">
+                <iframe src="https://player.vimeo.com/video/467834328?api=1&background=1&mute=1&loop=1" height="400"
+                    width="400" title="Iframe Example"></iframe>
+            </div>
+        </div>
+
+        <div class="selection2__wrapper">
+            <p class="header-1">
+                A living network of curious minds.
+            </p>
+            <div class="paragraph__wrapper">
+                <p class="paragraph">
+
+                    Anyone can write on Medium. Thought-leaders, journalists, experts, and individuals with unique
+                    perspectives share their thinking here. You’ll find pieces by independent writers from around the
+                    globe, stories we feature and leading authors, and smart takes on our own suite of blogs and
+                    publications.
+                </p>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4" *ngFor="let person of people">
+                    <div class="selection3__content">
+                        <div class="person__logo">
+                            <img
+                                src="https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png">
+                        </div>
+                        <h5>Peson Name</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection3__wrapper">
+            <div class="selection1__description">
+                <p class="header-1 header-2">
+                    Over 100 million readers and growing.
+                </p>
+
+            </div>
+
+            <div class="">
+                <owl-carousel-o [options]="customOptions">
+
+                    <ng-container *ngFor="let review of reviews;let i=index">
+                        <ng-template carouselSlide [id]="review.reviewid">
+                            <div class="review__wrapper">
+                                <div class="review__content">
+                                    <img [src]="review.image" [alt]="review.name" [title]="review.name"
+                                        class="profile__image">
+                                    <div class="full__circle"></div>
+                                    <div class="half__circle"></div>
+                                </div>
+                                <p class="review__message">
+                                    {{review.message}}
+                                </p>
+                                <p class="reviewer__name">
+                                    {{review.name}}
+                                </p>
+                            </div>
+
+
+                        </ng-template>
+                    </ng-container>
+
+                </owl-carousel-o>
+            </div>
+        </div>
+
+        <div class="selection4__wrapper">
+            <p class="header-1">
+                Create the space for your thinking to take off.
+            </p>
+            <p class="description">
+                A blank page is also a door. At Medium you can walk through it. It's easy and free to share your
+                thinking on any topic, connect with an audience, express yourself with a range of publishing tools, and
+                even earn money for your work.
+            </p>
+
+            <button class="btn btn-outline-success">Write on medium</button>
+        </div>
+
+
+        <div class="selection5__wrapper">
+            <p class="header-1">
+                Get more with membership.
+            </p>
+
+            <p class="description">
+                Become a Medium member to enjoy unlimited access and directly support the writers you read most.
+            </p>
+
+            <button type="button" class="btn btn-outline-light">See membership option</button>
+        </div>
+
+        <div class="selection6__wrapper">
+            <div>
+                <div class="header-2">
+                    Read as much as you want.
+                </div>
+                <div class="image__content">
+                    <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/UnlimitedReading.svg">
+                </div>
+
+                <div class="description">
+                    Enjoy unlimited access to every story across all of your devices.
+                </div>
+            </div>
+
+            <div>
+                <div class="header-2">
+                    Reward quality content.
+                </div>
+                <div class="image__content">
+                    <img src="https://cdn-static-1.medium.com/sites/medium.com/about/images/SupportWriters.svg">
+                </div>
+                <div class="description">
+                    Your membership helps us pay writers, and keeps your experience ad-free.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
